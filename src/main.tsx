@@ -5,7 +5,8 @@ import './index.css'
 // import { TrafficLight } from './01-useState/TrafficLight'
 // import { TrafficLightWithEffect } from './02-useEfect/TrafficLightWithEffect'
 // import { TrafficLightWithHook } from './02-useEfect/TrafficLightWithHook'
-import { PokemonPage } from './03-examples/PokemonPage'
+// import { PokemonPage } from './03-examples/PokemonPage'
+import { TasksApp } from './o5-useReducer/TaskApp'
 
 
 createRoot(document.getElementById('root')!).render(
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')!).render(
     {/* <TrafficLight /> */}
     {/* <TrafficLightWithEffect /> */}
     {/* <TrafficLightWithHook /> */}
-    <PokemonPage/>
+    {/* <PokemonPage/> */}
+    <TasksApp />
   </StrictMode>,
 )
