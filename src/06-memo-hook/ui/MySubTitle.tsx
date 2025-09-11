@@ -1,9 +1,12 @@
+import { memo } from "react"
+
 interface Props{
     subtitle:string
 }
 
-export const MySubTitle = ({subtitle}:Props) => {
+export const MySubTitle =memo(({subtitle}:Props) => {
   console.log("My SubTitle re-render")
+  console.log("tarea Superpesada")
   return (
     <>
         <h6 className="text-2xl font-bold">{subtitle}</h6>
@@ -12,4 +15,4 @@ export const MySubTitle = ({subtitle}:Props) => {
         </button>
     </>
   )
-}
+})
