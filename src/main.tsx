@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { Toaster, toast } from 'sonner'
 // import { HookApp } from './HookApp'
-import './index.css'
 // import { InstagromApp } from './07-use_Optimistic/instagromApp'
 // import { TrafficLight } from './01-useState/TrafficLight'
 // import { TrafficLightWithEffect } from './02-useEfect/TrafficLightWithEffect'
@@ -12,10 +12,12 @@ import './index.css'
 // import { MemoHook } from './06-memo-hook/MemoHook'
 import { ProffesionalAPP } from './09-useContext/ProffesionalApp'
 
+import './index.css'
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <Toaster/>
     {/* <HookApp /> */}
     {/* <TrafficLight /> */}
     {/* <TrafficLightWithEffect /> */}
