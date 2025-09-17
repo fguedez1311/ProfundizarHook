@@ -1,10 +1,10 @@
-import { useContext} from 'react'
+import { use} from 'react'
 import { UserContext } from '@/09-useContext/context/UserContext'
 import { Button } from '@/components/ui/button'
 
 
 export const ProfilePage = () => {
-  const {user}=useContext(UserContext)
+  const {user}=use(UserContext)
   return (
     <div className='flex flex-col items-center justify-center min-h-screen'>
         <h1 className='text-4xl'>Perfil del usuario</h1>
